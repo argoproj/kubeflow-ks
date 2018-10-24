@@ -103,5 +103,11 @@
       privateGKECluster: 'false',
       secretName: 'envoy-ingress-tls',
     },
+    "mpi-operator": {
+      gpusPerNode: 8,
+      image: "mpioperator/mpi-operator:latest",
+      kubectlDeliveryImage: "mpioperator/kubectl-delivery:latest",
+      name: "mpi-operator",
+    },
   },
 }
