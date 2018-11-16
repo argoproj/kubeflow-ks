@@ -221,7 +221,7 @@
           app: "argo-ui",
         },
         sessionAffinity: "None",
-        type: "NodePort",
+        type: "LoadBalancer",
       },
     },
     argUIService:: argUIService,
@@ -229,7 +229,19 @@
     local workflowControllerConfigmap = {
       apiVersion: "v1",
       data: {
-        config: @"executorImage: " + params.executorImage,
+        config: |||
+          executorImage: argoproj/argoexec:v2.2.0,
+          artifactRepository:
+            s3:
+              bucket: kubecon-demo
+              endpoint: storage.googleapis.com
+              accessKeySecret:
+                name: gcs-credentials
+                key: accessKey
+              secretKeySecret:
+                name: gcs-credentials
+                key: secretKey
+      |||,
       },
       kind: "ConfigMap",
       metadata: {
