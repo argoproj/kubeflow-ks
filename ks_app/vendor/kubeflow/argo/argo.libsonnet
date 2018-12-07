@@ -230,7 +230,7 @@
       apiVersion: "v1",
       data: {
         config: |||
-          executorImage: argoproj/argoexec:v2.2.0
+          executorImage: argoproj/argoexec:v2.2.1
           artifactRepository:
             s3:
               bucket: kubecon-demo
