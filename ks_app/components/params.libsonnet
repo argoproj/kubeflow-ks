@@ -55,11 +55,11 @@
       tfJobVersion: 'v1alpha2',
     },
     argo: {
-      executorImage: 'argoproj/argoexec:v2.2.0',
+      executorImage: 'argoproj/argoexec:v2.2.1',
       name: 'argo',
       namespace: 'null',
-      uiImage: 'argoproj/argoui:v2.2.0',
-      workflowControllerImage: 'argoproj/workflow-controller:v2.2.0',
+      uiImage: 'argoproj/argoui:v2.2.1',
+      workflowControllerImage: 'argoproj/workflow-controller:v2.2.1',
     },
     katib: {
       modeldbDatabaseImage: 'mongo:3.4',
