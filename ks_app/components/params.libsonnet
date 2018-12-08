@@ -58,7 +58,7 @@
       executorImage: 'argoproj/argoexec:v2.2.1',
       name: 'argo',
       namespace: 'null',
-      uiImage: 'argoproj/argoui:v2.2.1',
+      uiImage: 'argoproj/argoui:v2.2.1-37808b1',
       workflowControllerImage: 'argoproj/workflow-controller:v2.2.1',
     },
     katib: {
