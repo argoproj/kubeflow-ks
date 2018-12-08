@@ -86,7 +86,7 @@
     "cert-manager": {
       acmeEmail: 'dthomson25@gmail.com',
       acmeUrl: 'https://acme-v02.api.letsencrypt.org/directory',
-      certManagerImage: 'quay.io/jetstack/cert-manager-controller:v0.4.0',
+      certManagerImage: 'quay.io/jetstack/cert-manager-controller:v0.5.2',
       name: 'cert-manager',
       namespace: 'null',
     },
