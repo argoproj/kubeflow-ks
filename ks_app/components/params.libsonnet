@@ -61,17 +61,6 @@
       uiImage: 'argoproj/argoui:v2.2.1-37808b1',
       workflowControllerImage: 'argoproj/workflow-controller:v2.2.1',
     },
-    katib: {
-      modeldbDatabaseImage: 'mongo:3.4',
-      modeldbFrontendImage: 'gcr.io/kubeflow-images-public/katib/katib-frontend:v0.1.2-alpha-34-gb46378c',
-      modeldbImage: 'gcr.io/kubeflow-images-public/modeldb-backend:v0.2.0',
-      name: 'katib',
-      studyJobControllerImage: 'katib/studyjob-controller',
-      suggestionGridImage: 'gcr.io/kubeflow-images-public/katib/suggestion-grid:v0.1.2-alpha-34-gb46378c',
-      suggestionRandomImage: 'gcr.io/kubeflow-images-public/katib/suggestion-random:v0.1.2-alpha-34-gb46378c',
-      vizierCoreImage: 'gcr.io/kubeflow-images-public/katib/vizier-core:v0.1.2-alpha-34-gb46378c',
-      vizierDbImage: 'mysql:8.0.3',
-    },
     spartakus: {
       name: 'spartakus',
       reportUsage: 'true',
